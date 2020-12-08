@@ -1,0 +1,25 @@
+.topCategories{
+    padding: 30px;
+    .topCategories__content{
+        width: 85%;
+        margin: 0 auto;
+        h3{
+            @include text($color-black-0, $fs-3, $fw-bold);
+        }
+        .row{
+            padding-top: $pd-2 ;
+            .topCategories__item{
+            
+                border: solid 0.1px $color-white-cream;
+                margin-bottom: $mg-1;
+                @include text($color-black-light, $fs-2, $fw-normal);
+                padding: $pd-2;
+                transition: all .3s;
+                &:hover{
+                    box-shadow: .5px .5px 4px .5px $color-gray-2;
+                }
+            }
+        }
+        
+    }
+}

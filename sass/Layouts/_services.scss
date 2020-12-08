@@ -1,0 +1,30 @@
+.services {
+    background-color: $color-gray-5;
+    padding: $pd-2 0;
+    .services__content {
+        width: 70%;
+        margin: 0 auto;
+        .row {
+            display: flex;
+            justify-content: space-between;
+            .services__item {                
+                padding: $pd-1;
+                text-align: left;
+                .item{
+                    background: $color-white-0;
+                    height: 100%;
+                    border: $color-gray-6 .1px solid;
+                    padding: $pd-0 $pd-2;
+                    i{
+                        padding-top: $pd-2;
+                        @include text($color-blue, 43px, $fw-normal);
+                    }
+                    h4{
+                        margin: 0;
+                        padding-top: $pd-2;
+                    }
+                }               
+            }
+        }
+    }
+}

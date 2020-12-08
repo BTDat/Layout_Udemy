@@ -1,0 +1,78 @@
+.courses {
+    margin-top: $mg-2;
+    .courses__content {
+        width: 90%;
+        margin: auto;
+        .courses__intro {
+            padding-left: 7%;
+            padding-right: 7%;
+            align-items: center;
+            padding-top: 40%;
+            background-color: $color-white-cream;
+            height: 97%;
+            h4 {
+                @include text ($color-black-0, $fs-3 - 4, $fw-bold);
+            }
+        }
+        .courses__nav {
+            .nav {
+                justify-content: space-between;
+                .nav-item {
+                    &:hover {
+                        .nav-link {
+                            border: none;
+                        }
+                    }
+                    .nav-link.active {
+                        border: none;
+                        border-bottom: 5px solid $color-blue;
+                    }
+                    .nav-link {
+                        color: $color-black-0;
+                        font-size: $fs-0;
+                        font-weight: $fw-normal;
+                        border: none;
+                    }
+                }
+            }
+            .tab-content {
+                position: relative;
+                margin-top: $mg-2;
+                .card-title {
+                    color: $color-black-0;
+                    font-size: $fs-0;
+                    font-weight: $fw-bold;
+                }
+                .card-text {
+                    color: $color-gray-4;
+                    font-size: $fs-1;
+                    font-weight: $fw-normal;
+                }
+                .rating {
+                    .rating-star {
+                        @include text ($color-yellow, $fs-1, $fw-normal);
+                        margin-right: $mg-0;
+                    }
+                    span:nth-child(2){
+                        @include text ($color-gray-4, $fs-1, $fw-normal);
+                        margin-right: $mg-0;
+                    }
+                    span:last-child{
+                        @include text ($color-gray-4, $fs-1, $fw-normal);
+                    }
+                }
+                .gia{
+                    text-align: right;
+                    margin-top: $mg-1;
+                    .gia-cu{
+                        @include text ($color-gray-4, $fs-1, $fw-normal);
+                        text-decoration: line-through;
+                    }
+                    .gia-moi{
+                        @include text ($color-black-0, $fs-2, $fw-bold); 
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.intro{
+    background: linear-gradient(to right, $color-purple,$color-red-1, $color-red-0,$color-yellow);
+    .intro__content{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .item{
+        display: flex;
+        align-items: center;
+        .intro__icon{
+            color: $color-white-0;
+            font-size: 47px;
+            font-weight: bold;
+            margin-right: $mg-2;
+        }
+        .intro__text{
+            p{
+                font-size: $fs-0 + 2;
+                margin-bottom: 0;
+                color: $color-white-0;
+                font-weight: $fw-bold;
+            }
+            span{
+                font-size: $fs-0 + 2;
+                margin-bottom: 0;
+                color: $color-white-0;
+                font-weight: $fw-normal;
+            }
+        }
+    }
+    .item__1{
+        padding: $pd-1 $pd-2 $pd-1 0;
+    }
+    .item__2, .item__3{
+        padding: $pd-2;
+    }
+}

@@ -1,0 +1,42 @@
+.partners {
+    .partners__content {
+        background-color: $color-white-cream;
+        .partners__text {
+            @include text($color-gray-2, $fs-0, $fw-normal);
+            text-align: center;
+        }
+        .partners__item {
+            padding-top: 30px;
+            justify-content: space-around;
+            @media screen and (max-width: 768px) {
+                img{
+                    width: 50px;
+                }
+            }
+        }
+        .partners__info {
+            padding: 40px 0;
+            .partners__info-1, .partners__info-2{
+                .info-1{
+                    width: 450px;
+                    text-align: center;
+                    margin: 0 auto;
+                    padding: $pd-2;
+                    @media screen and (max-width: 768px) {
+                        width: 300px;
+                        @include text($color-black-light, $fs-1, $fw-bold);
+                    }
+                    h2{
+                        @include text($color-black-light, $fs-2, $fw-bold);
+                    }
+                    button{
+                        @include text($color-white-0, $fs-1, $fw-bold);
+                    }
+                }
+            }
+            .partners__info-1{
+                border-right: solid $color-gray-3 1px;
+            }
+        }
+    }
+}

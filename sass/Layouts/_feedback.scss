@@ -1,0 +1,48 @@
+.feedback{
+    background-color: $color-white-cream;
+    padding: $pd-2;
+    .feedback__content{
+        padding: $pd-2;
+        width: 90%;
+        margin: 0 auto;
+        h3{
+            @include text($color-black-0, $fs-2, $fw-bold);
+            margin-bottom: $mg-2;
+            
+        }
+        .feedback__item{
+    
+            justify-content: space-between;
+            .card{ 
+                height: 240px;
+                border: none;
+                margin-right: $mg-1;
+                .feedback1{
+                    @media screen and (max-width: 768px) {
+                        @include text($color-black-light, $fs-0, $fw-normal);
+                    }
+                    background-color: $color-white-0;
+                    padding: 30px;
+                    .card-img-top{
+                        @media screen and (max-width: 768px) {
+                            width: 30px;
+                            height: 30px;
+                        }
+                        width: 50px;
+                        height: 50px;
+                        margin-right: $mg-1;
+                        display: inline-block;
+                        border-radius: 50%;
+                    }
+                    .card-title{
+                        @include text($color-black-0, $fs-1, $fw-bold)
+                    }
+                    .card-body{
+                        padding: 0;
+                        margin-top: $mg-2 ;
+                    }
+                }
+            }
+        }
+    }
+}

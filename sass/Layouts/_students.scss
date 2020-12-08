@@ -1,0 +1,46 @@
+.students{
+    margin-top: $mg-2;
+    .students__content{
+        width: 90%;
+        margin: auto;
+        h2{
+            @include text($color-gray-2, $fs-2, $fw-normal);
+        }
+        .students__card{
+            .card-title {
+                color: $color-black-0;
+                font-size: $fs-0;
+                font-weight: $fw-bold;
+            }
+            .card-text {
+                color: $color-gray-4;
+                font-size: $fs-1;
+                font-weight: $fw-normal;
+            }
+            .rating {
+                .rating-star {
+                    @include text ($color-yellow, $fs-1, $fw-normal);
+                    margin-right: $mg-0;
+                }
+                span:nth-child(2){
+                    @include text ($color-gray-4, $fs-1, $fw-normal);
+                    margin-right: $mg-0;
+                }
+                span:last-child{
+                    @include text ($color-gray-4, $fs-1, $fw-normal);
+                }
+            }
+            .gia{
+                text-align: right;
+                margin-top: $mg-1;
+                .gia-cu{
+                    @include text ($color-gray-4, $fs-1, $fw-normal);
+                    text-decoration: line-through;
+                }
+                .gia-moi{
+                    @include text ($color-black-0, $fs-2, $fw-bold); 
+                }
+            }
+        }
+    }
+}

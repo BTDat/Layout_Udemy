@@ -1,0 +1,48 @@
+.banner{
+    .banner__content{
+        background-color: $color-black-0;
+        @include text($color-white-0, 32px, $fw-bold);
+        .banner__top, .banner__bottom{
+            padding: $pd-2;
+        }
+        .banner__center{
+            .row{
+                align-items: center;
+            }
+            .icon1{
+                text-align: right;
+                padding-right: 4%;
+            }
+            .icon2{
+                text-align: left;
+                padding-left: 4%;
+            }
+            h3{
+                @include text($color-white-0, $fs-3, $fw-bold);
+            }
+            p{
+                @include text($color-white-0, $fs-1, $fw-bold);
+            }
+            button{
+                @include text($color-white-0, $fs-1, $fw-bold);
+            }
+        }
+        .banner__center, .banner__bottom, .banner__top{
+            i{
+                @media screen and (max-width: 768px){
+                    display: none;
+                 }
+                 @media screen and (max-width: 576px){
+                    display: none;
+                }
+            }        
+        }
+    }
+}
+@media screen and (max-width: 1200px){
+
+}
+@media screen and (max-width: 996px){
+
+}
+

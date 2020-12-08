@@ -1,0 +1,87 @@
+header {
+    .navbar {
+        margin: 0 auto;
+        width: 90%;
+        background-color: white;
+    }
+    .header__left {
+        display: flex;
+        align-items: center;
+        .navbar-brand {
+            flex-grow: 1;
+            img {
+                width: 110px;
+            }
+        }
+        .Categories {
+            flex-grow: 1; //mặt định là 0
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+        .headerForm {
+            flex-grow: 5; //thêm phần trống của class cha cho class con
+            @include search;
+            .input-group {
+                border: 1px solid #eeeeee;
+                @media screen and (max-width: 768px) {
+                    width: 200px;
+                }
+                @media screen and (max-width: 576px) {
+                    width: 50px;
+                }
+            }
+            .form-control {
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+            i {
+                @media screen and (max-width: 768px) {
+                    color: $color-red-0;
+                    background-color: white;
+                    font-size: 15px;
+                    transition: all 0.5s;
+                    &:hover {
+                        background-color: $color-red-0;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .header__right {
+        .navbar-nav {
+            width: 100%;
+            justify-content: space-between;
+            .nav-item1,
+            .nav-item2 {
+                &:hover {
+                    background-color: $color-gray-1;
+                }
+            }
+            .nav-item4,
+            .nav-item1,
+            .nav-item2 {
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+        .btn__login {
+            border: 1px solid gray;
+            font-weight: bold;
+            color: gray;
+            transition: all 0.5s;
+            &:hover {
+                color: black;
+            }
+        }
+        .btn-danger {
+            transition: all 0.5s;
+            &:hover {
+                background-color: #521822;
+            }
+        }
+    }
+}

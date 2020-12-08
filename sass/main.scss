@@ -1,0 +1,29 @@
+//Helper
+@import './Helper/variables';
+@import './Helper/mixin';
+@import './Helper/extend';
+
+//vendor
+
+//Base
+@import './Base/reset';
+@import './Base/customize';
+
+//component
+@import './Components/botton';
+
+//layouts
+@import './Layouts/header';
+@import './Layouts/carousel';
+@import './Layouts/intro';
+@import './Layouts/courses';
+@import './Layouts//students';
+@import './Layouts/services';
+@import './Layouts/banner';
+@import './Layouts/topCategories';
+@import './Layouts/feedback';
+@import './Layouts/partners';
+@import './Layouts/footer'
+//Pages
+
+//Theme

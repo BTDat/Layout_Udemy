@@ -1,0 +1,69 @@
+footer{
+    border-bottom: $color-red-0 solid 5px ;
+    .footer__content{
+        padding-top: 40px;
+        .foot1{
+            padding: $pd-2;
+            border-bottom: solid $color-gray-6 1px;
+            width: 95%;
+            margin: 0 auto;
+            a{
+                margin-bottom: $mg-1;
+                display: block;
+                @include text($color-blue, $fs-1, $fw-bold);
+                cursor: pointer;
+                &:hover{
+                    text-decoration: none;
+                    color: $color-black-0;
+                }
+            }
+            p{
+                @include text($color-blue, $fs-1, $fw-normal);
+                margin-bottom: $mg-1;
+                cursor: pointer;
+                &:hover{
+                    color: $color-black-0;
+                }
+            }
+            .button{
+                text-align: right;
+                button{
+                    padding: $pd-0 30px;
+                    border: solid $color-black-0 .5px;
+                    border-radius: 0;
+                    i{
+                        margin-right:$mg-1;
+                    }
+                }
+            }
+            
+        }
+        .foot2{
+            width: 95%;
+            margin: 0 auto;
+            padding: 30px;
+            justify-content: space-between;
+            align-items: center;
+            
+            .foot2__left{
+                span{
+                    @include text($color-gray-2, $fs-1, $fw-normal);
+                }
+                img{
+                    width: 110px;
+                    margin-right: $mg-2;
+                }
+            }
+            .foot2__right{
+                span{
+                    cursor: pointer;
+                    @include text($color-blue, $fs-1, $fw-normal);
+                    &:hover{
+                        color: $color-black-0;
+                    }
+                }
+            }
+            
+        }
+    }
+}
